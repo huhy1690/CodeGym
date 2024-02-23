@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Codegym</title>
+  <style></style>
+  <body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <button onclick="Tinhtong()">Tính tổng</button>
+    <div id="ketqua" style="border: 1px inset black; height: 50px; width: 100px;"></div>
+    <script>
+       function Tinhtong() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+
+        let tong = a + b
+        
+        document.getElementById('ketqua').innerText = 'Tổng:' + tong;
+       }
+    </script>
+
+  </body>

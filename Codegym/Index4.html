@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codegym</title>
+  <style></style>
+  <body>
+    <input type="text" id="monney"> 
+    <input type="text" id="year">
+     <button onclick="navmonney()">Tổng số tiền tui nhận được</button> 
+     <div id="lai"></div>
+
+     <script> 
+       function navmonney() { 
+         let c = +document.getElementById('monney').value;
+         let d = +document.getElementById('year').value;
+
+         console.log(typeof(c));
+         console.log(typeof(d));
+
+         let tien = c * (1.069) ** d;
+
+        document.getElementById('lai').innerText = 'Số tiền có sau ' + d + ' năm là:' + tien;
+        } 
+     </script> 
+
+     <script>
+        let r = +prompt('Mời nập bán kính hình chòn');
+
+        let chuvi = 2 * r * 3.14;
+
+        let s = r * r * 3.14;
+
+        document.write('Chu vi là: ' + chuvi);
+        document.write('Chu vi là: ' + s);
+
+     </script>
+  </body>

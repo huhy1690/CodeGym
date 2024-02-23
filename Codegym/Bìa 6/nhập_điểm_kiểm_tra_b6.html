@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codegym</title>
+  <style></style>
+  <body>
+    <h1 id="hien"></h1>
+      <script>
+          let a = +prompt('Mời nhập điểm');
+
+          console.log(a);
+
+          if (a < 5) {
+            document.getElementById('hien').innerText = 'Học sinh Yếu';
+            alert('Học sinh Yếu');
+          }
+
+          if (a >= 5 && a < 8.5) {
+            document.getElementById('hien').innerText = 'Học sinh Khá';
+            alert('Học sinh Khá');
+
+          }
+
+          if (a >= 8.5) {
+            document.getElementById('hien').innerText = 'Học sinh Giỏi';
+            alert('Học sinh Giỏi');
+
+          }
+      </script>
+  </body>

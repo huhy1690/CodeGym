@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="day">
+    <button onclick="tinh()">Tính số ngày</button>
+    <p id="write"></p>
+    
+    <script>
+        function tinh() {
+            let day = +document.getElementById('day').value;
+
+            if (day == 1) {document.getElementById('write').innerText = 'Tháng 1 có 31 ngày'}
+            if (day == 2) {document.getElementById('write').innerText = 'Tháng 2 có 28 ngày hoặc 29 ngày'}
+            if (day == 3) {document.getElementById('write').innerText = 'Tháng 3 có 31 ngày'}
+            if (day == 4) {document.getElementById('write').innerText = 'Tháng 4 có 30 ngày'}
+            if (day == 5) {document.getElementById('write').innerText = 'Tháng 5 có 31 ngày'}
+            if (day == 6) {document.getElementById('write').innerText = 'Tháng 6 có 30 ngày'}
+            if (day == 7) {document.getElementById('write').innerText = 'Tháng 7 có 31 ngày'}
+            if (day == 8) {document.getElementById('write').innerText = 'Tháng 8 có 31 ngày'}
+            if (day == 9) {document.getElementById('write').innerText = 'Tháng 9 có 30 ngày'}
+            if (day == 10) {document.getElementById('write').innerText = 'Tháng 10 có 31 ngày'}
+            if (day == 11) {document.getElementById('write').innerText = 'Tháng 11 có 30 ngày'}
+            if (day == 12) {document.getElementById('write').innerText = 'Tháng 12 có 31 ngày'}
+
+            alert('Một con vịt');
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tìm giá hoa quả</h1>
+
+    <p>Nhập tên sản phẩm như sau: VD:Ổi, Cam, Quýt</p>
+
+    <input type="text" id="kudamono">
+    <button onclick="price()">Xem giá</button>
+    <h2 id="write"></h2>
+    <script>
+        function price(b) {
+            let a = document.getElementById('kudamono').value;
+
+            if (a == 'Ổi') {
+                document.getElementById('write').innerText = '50000 VNĐ/kg';
+            }
+
+            else {
+                document.getElementById('write').innerText = 'Rất tiếc không có mặt hàng bạn vừa nhập';
+            }
+            
+            if (a == 'Dưa Hấu') {
+                document.getElementById('write').innerText = '20000 VNĐ/kg';
+            }
+
+            if (a == 'Táo') {
+                document.getElementById('write').innerText = '30000 VNĐ/kg';
+            }
+
+            if (a == 'Xoài') {
+                document.getElementById('write').innerText = '30000 VNĐ/kg';
+            }
+
+            if (a == 'Cam') {
+                document.getElementById('write').innerText = '40000 VNĐ/kg';
+            }
+
+            if (a == 'Chôm Chôm') {
+                document.getElementById('write').innerText = '40000 VNĐ/kg';
+            }
+
+            if (a == 'Măng Cụt') {
+                document.getElementById('write').innerText = '50000 VNĐ/kg';
+            }
+            
+        }
+    </script>
+</body>
+</html>

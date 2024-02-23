@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codegym</title>
+  <style></style>
+  <body>
+
+    <button onclick="kq()">Kiểm tra</button>
+    <h1 id="hi"></h1>
+
+    <script>
+        function kq() {
+        let c = +prompt('Nhập số thứ 1');
+        let d = +prompt('Nhập số thứ 2');
+        let e = +prompt('Nhập số thứ 2');
+
+        let max = c;
+
+        if (max < d) {
+            max = d;
+         }
+
+         if (max < e) {
+            max = e;  
+         }
+
+          alert(max);
+        }
+    </script>
+
+  </body>

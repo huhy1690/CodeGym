@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Mời bạn nhập năm bạn muốn tìm</h4>
+    <input type="text" id="year">
+    <button onclick="tim()">Tìm kiếm</button>
+    <h3 id="write"></h3>
+    <script>
+         function tim() {
+            let a = +document.getElementById('year').value;
+
+            h = a % 10;
+
+            if (h == 0) {
+                 b = 'Canh';
+            }
+            
+            if (h == 1) {
+                 b = 'Tân';
+            }
+
+            if (h == 2) {
+                 b = 'Nhâm';
+            }
+
+            if (h == 3) {
+                 b = 'Quý';
+            }
+
+            if (h == 4) {
+                 b = 'Giáp';
+            }
+
+            if (h == 5) {
+                 b = 'Ất';
+            }
+
+            if (h == 6) {
+                 b = 'Bính';
+            }
+
+            if (h == 7) {
+                 b = 'Đinh';
+            }
+
+            if (h == 8) {
+                 b = 'Mậu';
+            }
+            
+            if (h == 9) {
+                 b = 'Kỉ';
+            }
+
+
+            e = a % 12;
+
+            if (e == 0) {
+                c = ' Thân';
+            }
+            if (e == 1) {
+                c = ' Dậu';
+            }            
+            if (e == 2) {
+                c = ' Tuất';
+            }
+            if (e == 3) {
+                c = ' Hợi';
+            }
+            if (e == 4) {
+                c = ' Tý';
+            }
+            if (e == 5) {
+                c = ' Sửu';
+            }
+            if (e == 6) {
+                c = ' Dần';
+            }
+            if (e == 7) {
+                c = ' Mẹo';
+            }
+            if (e == 8) {
+                c = ' Thìn';
+            }
+            if (e == 9) {
+                c = ' Tỵ';
+            }
+            if (e == 10) {
+                c = ' Ngọ';
+            }
+            if (e == 11) {
+                c = ' Mùi';
+            }
+         
+            document.getElementById('write').innerText = 'Năm ' + a + ' Có năm âm lịch là ' + b + c;
+            
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codegym</title>
+  <style></style>
+  <body>
+    <input type="text" id="monney"> 
+    <input type="text" id="year">
+     
+     <button onclick="navmonney()">Tổng</button>
+     <button onclick="navmonney1()">Tích</button> 
+     <button onclick="navmonney2()">Chia</button> 
+     <button onclick="navmonney3()">Trừ</button> 
+
+     <div id="lai"></div>
+
+     <script> 
+       function navmonney() { 
+         let c = +document.getElementById('monney').value;
+         let d = +document.getElementById('year').value;
+
+         console.log(typeof(c));
+         console.log(typeof(d));
+
+        document.getElementById('lai').innerText = 'Tổng' + (c + d);
+
+        } 
+
+        function navmonney1() { 
+         let c = +document.getElementById('monney').value;
+         let d = +document.getElementById('year').value;
+
+         console.log(typeof(c));
+         console.log(typeof(d));
+
+        document.getElementById('lai').innerText = 'Tổng' + (c * d);
+
+        } 
+
+        function navmonney2() { 
+         let c = +document.getElementById('monney').value;
+         let d = +document.getElementById('year').value;
+
+         console.log(typeof(c));
+         console.log(typeof(d));
+
+        document.getElementById('lai').innerText = 'Tổng' + (c / d);
+
+        } 
+
+        function navmonney3() { 
+         let c = +document.getElementById('monney').value;
+         let d = +document.getElementById('year').value;
+
+         console.log(typeof(c));
+         console.log(typeof(d));
+
+        document.getElementById('lai').innerText = 'Tổng' + (c - d);
+
+        } 
+     </script> 
+ 
+     </body>

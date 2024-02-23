@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input id="time" type="text">
+  <button onclick="monney()">Tính</button>
+  <h1 id="hien"></h1>
+    <script>
+    
+     function monney() {
+      let a = +document.getElementById('time').value;
+      
+      if (a <= 99) {
+          let tien = 1800 * a;
+          console.log(a);
+          console.log(tien);
+          document.getElementById('hien').innerText ='Thu ' + tien + ' cho ' + a + ' số điện';
+      }
+ 
+      if (a > 99 && a <= 199) {
+          let tien = 99 * 1800 + (a - 99) * 2000;
+          console.log(tien);
+          document.getElementById('hien').innerText ='Thu ' + tien + ' cho ' + a + ' số điện';
+      }
+
+      if (a > 200) {
+          let tien = 99 * 1800 + 100 * 2000 + (a - 199) * 2200;
+          console.log(tien);
+          document.getElementById('hien').innerText ='Thu ' + tien + ' cho ' + a + ' số điện';
+      }
+    }
+    </script>
+</body>
+</html>
