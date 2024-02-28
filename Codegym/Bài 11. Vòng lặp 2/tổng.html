@@ -1,0 +1,25 @@
+<!-- Tính tổng các số chia hết cho 3 và lớn hơn 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Mời nhập a");
+        let b = +prompt("Mời nhập b");
+        
+        let c = 0;
+
+        for (f = a; f <= b; f++) {
+            if ((f % 3 == 0) && f > 2) {
+                c = f + c;
+            }
+        }
+
+        document.write(c);
+   </script>
+</body>
+</html>

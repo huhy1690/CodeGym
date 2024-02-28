@@ -1,0 +1,44 @@
+<!-- Nhập và x, kiểm tra x có phải số nguyên tố không -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Mời bạn nhập số cần kiểm tra");
+
+    if (a < 2) {
+        document.write("Số vừa nhập không là số nguyên tố");
+    }
+
+    if (a == 2) {
+        document.write("Số vừa nhập là số nguyên tố");
+     }
+
+    let k;
+
+    let i = 1;
+    
+    for (i = 1; i > a ; i++) {
+        console.log(i);
+        if (a % i == 0) {
+            let k = 1;
+            break;
+        }
+
+    }
+    
+    if (k == 1) {
+        document.write("Số này là số nguyên tố");
+    }
+    else {
+        document.write("Só này không phải số nguyên tố");
+
+    }
+    </script>
+
+</body>
+</html>
