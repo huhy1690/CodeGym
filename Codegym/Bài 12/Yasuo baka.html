@@ -12,6 +12,8 @@
         let a = +prompt('Mời nhập số Gái');
         let b = +prompt('Mời nhập số Trai');
 
+        if (a < b) {
+
         c = b - a;
         
         if (c % 2 != 0) {
@@ -23,6 +25,23 @@
 
         document.getElementById('input').innerText = 'Gái ' + a + ' ' + 'Trai ' + b;
         document.getElementById('kq').innerText = 'Cặp đôi ' + a + ' ' + 'Cặp trai ' + e;
+        }
+
+        else {
+            c = a - b;
+        
+        if (c % 2 != 0) {
+            d = 1;
+            document.write('Thừa một Gái');
+        } else {d = 0}
+
+        e = (c - d)/2;
+
+        document.getElementById('input').innerText = 'Gái ' + a + ' ' + 'Trai ' + b;
+        document.getElementById('kq').innerText = 'Cặp đôi ' + b + ' ' + 'Cặp Gái ' + e;
+        
+        }
+
 
     </script>
 </body>
