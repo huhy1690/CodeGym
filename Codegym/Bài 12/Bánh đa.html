@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt('Bạn muốn dán mấy cái bánh đa nem');
+
+        let b = a % 9;
+
+        if (b != 0) {
+            c = 1;
+        }
+        else {c = 0}
+
+        let d = (a - b)/9 +c;
+
+        document.write('Số lần Nam cần rán tối thiểu là ' + d);
+    </script>
+</body>
+</html>
