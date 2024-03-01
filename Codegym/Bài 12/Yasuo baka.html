@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="input"></h2>
+    <h1 id="kq"></h1>
+    <script>
+        let a = +prompt('Mời nhập số Gái');
+        let b = +prompt('Mời nhập số Trai');
+
+        c = b - a;
+        
+        if (c % 2 != 0) {
+            d = 1;
+            alert('Thừa một Trai')
+        } else {d = 0}
+
+        e = (c - d)/2;
+
+        document.getElementById('input').innerText = a + ' ' + b;
+        document.getElementById('kq').innerText = a + ' ' + e;
+
+    </script>
+</body>
+</html>

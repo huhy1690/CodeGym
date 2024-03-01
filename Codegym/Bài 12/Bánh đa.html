@@ -9,6 +9,8 @@
     <script>
         let a = +prompt('Bạn muốn dán mấy cái bánh đa nem');
 
+        if (a > 1 && a <10000) {
+
         let b = a % 9;
 
         if (b != 0) {
@@ -19,6 +21,13 @@
         let d = (a - b)/9 +c;
 
         document.write('Số lần Nam cần rán tối thiểu là ' + d);
+    }
+
+    else {
+        let a = +prompt('Mời bạn nhập lại số lượng chứ Nam rán không xuể');
+        let d = Math.ceil(a/9);
+        document.write('Số lần Nam cần rán tối thiểu là ' + d);
+    }
     </script>
 </body>
 </html>
