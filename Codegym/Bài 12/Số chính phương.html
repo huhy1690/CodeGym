@@ -1,0 +1,24 @@
+<!-- Nhập và a, b. In ra các số chính phương từ a đến b -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt('Nhập số bắt đầu');
+        let b = +prompt('Nhập số kết thúc');
+
+        for (i = a; a <= b; a++) {
+            for (j = 1; j < a; j++) {
+                if ((j*j) == a) {
+                    document.write(a);
+                }
+            } 
+        }
+
+    </script>
+</body>
+</html>
