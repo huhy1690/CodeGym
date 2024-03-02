@@ -11,12 +11,20 @@
         let a = +prompt('Nhập số bắt đầu');
         let b = +prompt('Nhập số kết thúc');
 
-        for (i = a; a <= b; a++) {
-            for (j = 1; j < a; j++) {
-                if ((j*j) == a) {
-                    document.write(a);
-                }
-            } 
+        // for (i = a; a <= b; a++) {
+        //     for (j = 1; j < a; j++) {
+        //         if ((j*j) == a) {
+        //             document.write(a + '<br>');
+        //         }
+        //     } 
+        // }
+
+        // document.write('<br>');
+
+        for (j = 1; j*j <= b; j++) {
+            if ((j * j) <= b && (j * j) >= a) {
+                document.write((j*j) + '<br>');
+            }
         }
 
     </script>
