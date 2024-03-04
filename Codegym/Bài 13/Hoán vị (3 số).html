@@ -1,0 +1,37 @@
+<!-- Nhập a,b,c (không trùng, khác 0). 
+In ra các số 3 chữ số có thể tạo ra từ a,b,c -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a = prompt('Nhập a:');
+       let b = prompt('Nhập b:');
+       let c = prompt('Nhập c:');
+
+       for (x = 0; x <= 3; x++) {          
+         for (y = 0; y <= 3; y++) {              
+           for (z = 0; z <= 3; z++) {
+                if ((x + y + z) == 3) {
+                    if (x == 1) {document.write(a)}
+                    if (x == 2) {document.write(a + a)}
+                    if (x == 3) {document.write(a + a + a)}
+                    if (y == 1) {document.write(b)}
+                    if (y == 2) {document.write(b + b)}
+                    if (y == 3) {document.write(b + b + b)}
+                    if (z == 1) {document.write(c)}
+                    if (z == 2) {document.write(c + c)}
+                    if (z == 3) {document.write(c + c + c)}
+                    document.write('<br>');
+                }
+           }
+         }
+       }
+
+    </script>
+</body>
+</html>

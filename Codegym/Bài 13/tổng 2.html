@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let N = +prompt('Nhập N');
+        let S = +prompt('Nhập S');
+
+        let dem = 0;
+
+        for (x = 0; x <= N; x++) {
+            for (y = 0; y <= N ; y++) {
+                for(z = 0; z <= N; z++) {
+                    if (x + y + z == S) {
+                        document.write(x + ',' + y + ',' + z + '<br>');
+                        dem++;
+                    }
+                }
+            }
+        }
+
+        document.write(dem);
+    </script>
+</body>
+</html>
