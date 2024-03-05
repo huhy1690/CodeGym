@@ -1,0 +1,27 @@
+<!-- Nhập và X, Cần có tổng X đồng từ 3 loại giấy bạc 1000 đồng, 2000 đồng, 5000 đồng. 
+Lập chương trình để tìm ra phương án ít số lượng tiền nhất -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = +prompt('Mời nhập số tiền cần rút');
+        
+        fivek = (x - (x % 5000)) / 5000;
+
+        twok = ((x % 5000) - ((x % 5000) % 2000)) / 2000;
+
+        onek = (x - fivek * 5000 - twok * 2000)/ 1000;
+
+        document.write('Số tờ tiền ít nhất cần thiết để đủ số tiền' + x + 'là:' + '<br>');
+        document.write('Số tờ 5k cần: ' + fivek + '<br>');
+        document.write('Số tờ 2k cần: ' + twok + '<br>');
+        document.write('Số tờ 1k cần: ' + onek);
+ 
+    </script>
+</body>
+</html>
