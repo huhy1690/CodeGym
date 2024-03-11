@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = +prompt('Mời nhập số cần tìm');
+
+        let abc = [10, 9, 2, 4, 5, 1, 5, 6, 7, 8, 9, 11];
+
+        for (i = 0; i < abc.length; i++) {
+            if (abc[i] == x) {
+                document.write(i + ', ');
+            }
+        }
+
+        let max = abc[0];
+
+        let y;
+
+        for (i = 0; i < abc.length; i++) {
+            if (max < abc[i]) {
+               max = abc[i];
+               y = i;
+               document.write('vị trí: ' + y + '<br>');
+            }
+        }
+
+        document.write(max);
+
+    </script>
+</body>
+</html>

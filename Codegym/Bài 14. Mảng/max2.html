@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let abc = [5, 5, 3, 4, 5, 2];
+
+        let max = abc[0];
+        
+        for (i = 0; i < abc.length; i++) {
+            if (max < abc[i]) {
+                max = abc[i];
+            }
+        }
+        let max2 = -999;
+
+        for (i = 0; i < abc.length; i++) {
+            if (abc[i] > max2 && abc[i] < max) {
+                max2 = abc[i];
+            }
+        }
+
+        document.write('Max2: ' + max2);
+    </script>
+</body>
+</html>
