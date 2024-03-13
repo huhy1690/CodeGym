@@ -1,0 +1,62 @@
+<!-- Tìm dãy con liên tiếp tăng dần dài nhất trong mảng -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let abc = [1, 2, 3, 2, 3, 4, 5, 7, 1, 2];
+
+        let xyz =[];
+
+        for (i = 0; i < abc.length; i++) {
+           tim(abc[i]);
+        }
+
+        function tim(a) {
+           let b = 0;
+           let c = []; 
+            //document.write(a);
+          for (j = i; j < abc.length; j++) {
+            if (b < abc[j]) {
+                b = abc[j];
+                document.write(abc[j] + ' ');
+                c.push(abc[j]);
+            }
+            else {break;}
+          }
+          xyz.push(c);
+          document.write('<br>');
+        }
+
+        document.write('<br>');
+        document.write('<br>');
+
+        for (m=0; m < xyz.length; m++) {
+            document.write(xyz[m] + '<br>');
+        }
+
+        let k = xyz[0].length;
+
+        let u = 0;
+
+        for (z = 0; z < xyz.length; z++) {
+            if (k < xyz[z].length) {
+                k = xyz[z].length;
+                u = z;
+                document.write(u);
+            }
+        }
+
+        document.write('<br>');
+        document.write('<br>');
+        document.write(u);
+        document.write(xyz[u]);
+
+    </script>
+</body>
+</html>

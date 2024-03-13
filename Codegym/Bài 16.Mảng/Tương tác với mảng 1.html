@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt('Nhập số phần tử trong mảng');
+
+        let abc = [];
+
+        for (i = 0; i < n; i++) {
+            abc.push(+prompt('nhập phần tử thứ: ' + i));
+            if (abc[i] == -1) {
+                break;
+            }
+        }
+
+        alert(abc);
+    </script>
+    <!-- Nhập các phần tử của mảng cho đến khi gặp -1 thì thôi -->
+</body>
+</html>
