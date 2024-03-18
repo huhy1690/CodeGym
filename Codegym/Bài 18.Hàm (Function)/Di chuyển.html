@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <img src="https://upload-os-bbs.hoyolab.com/upload/2021/12/31/147839994/e2069ae325e6aeafb1ad1f5cf2026e4c_7907795501048436744.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80" 
+         alt="" 
+         id="x"
+         style="width: 200px; 
+         height: auto;
+         top: 100px;
+         left: 100px;
+         position: absolute;">
+    <button onclick="right()">Sang phải</button>
+    <button onclick="left()">Sang trái</button>
+    <button onclick="button()">Xuống dưới</button>
+    <button onclick="topx()">Lên trên</button>
+
+
+    <script>
+        function right() {
+            xx = document.getElementById('x');
+            xx.style.left = parseInt(xx.style.left) + 20 + 'px';
+        }
+
+        function left() {
+            for (i = 0; i < 2; i++) {
+            xx = document.getElementById('x');
+            xx.style.left = parseInt(xx.style.left) - 20 + 'px';
+            }
+        }
+
+        function button() {
+            xx = document.getElementById('x');
+            xx.style.top = parseInt(xx.style.top) + 20 + 'px';
+        }
+
+        function topx() {
+            for (i = 0; i < 2; i++) {
+            xx = document.getElementById('x');
+            xx.style.top = parseInt(xx.style.top) - 20 + 'px';
+            }
+        }
+    </script>
+</body>
+</html>

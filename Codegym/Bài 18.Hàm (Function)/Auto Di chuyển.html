@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://upload-os-bbs.hoyolab.com/upload/2021/12/31/147839994/e2069ae325e6aeafb1ad1f5cf2026e4c_7907795501048436744.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80" 
+         alt="" 
+         id="x"
+         style="width: 200px; 
+         top: 200px;
+         left: 200px;
+         position: absolute;">
+    <script>
+
+        speedX = -1;
+        speedY = -1
+
+        setInterval(() => {
+            xx = document.getElementById('x')
+            xx.style.top = parseInt(xx.style.top) - speedX + 'px';
+            xx.style.left = parseInt(xx.style.left) - speedY + 'px';
+                console.log(xx.style.left);
+                console.log(xx.style.top);
+
+            if ( parseInt(xx.style.top) >= window.innerHeight - 200 || parseInt(xx.style.top) <= 0  ) {
+                 speedX = -speedX;
+            }
+
+            if (parseInt(xx.style.left) >= window.innerWidth - 200 || parseInt(xx.style.left) <= 0) {
+                speedY = -speedY;
+            }
+        }, 1);
+
+        document.write(window.innerWidth-200);
+        document.write(window.innerHeight-200);
+
+
+    </script>
+</body>
+</html>

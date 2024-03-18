@@ -1,0 +1,21 @@
+<!-- BTVN Kiểm tra xem một mảng có chứa tất cả các số từ 1 đến n không. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt('Nhập số n');
+        let bot = [1, 3, 4, 7, 8, 0, 3, 2, 1];
+        for (i = 0; i <= n; i++) {
+            if (bot.indexOf(i) == -1) {
+                document.write('Mảng không chứa phần tử từ 1 đến n');
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
