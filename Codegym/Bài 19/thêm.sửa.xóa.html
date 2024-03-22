@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="list()">List</button>
+    <button onclick="add()">Add</button>
+    <div id="main"></div>
+
+    <script>
+        let abc = ['Ip14', 'Ip15', 'Ip200'];
+
+        list();
+        
+        function list() {
+            let str = '<h1>Danh sách sản phẩm</h1>';
+            str += 'Tổng só lượng : ' + abc.length + '<br>';
+            for (i = 0; i < abc.length; i++) {
+                    str += abc[i] + "<button onclick = 'edit(" + i + ")'>Edit</button>" + '<br>';
+            }
+            document.getElementById('main').innerHTML = '<h3>' + str + '</h3>';
+        }
+
+        function add() {
+            let str = '<input id = "inp"> <button onclick = "addinp()">Add</button>'
+            document.getElementById('main').innerHTML = '<h3>' + str + '</h3>';
+        }
+
+        function addinp () {
+            abc.push(document.getElementById('inp').value);
+            list();
+        }
+
+        function edit(a) {
+            let str = '<input id = "inp" value = '+ abc[a] +'> <button onclick = "save(' + a + ')">Save</button>';
+            document.getElementById('main').innerHTML = '<h3>' + str + '</h3>';
+        }
+
+        function save(b) {
+            abc[b] = document.getElementById('inp').value;
+            list();
+        }
+    </script>
+</body>
+</html>
