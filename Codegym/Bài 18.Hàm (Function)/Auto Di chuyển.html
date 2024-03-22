@@ -16,12 +16,12 @@
     <script>
 
         speedX = -1;
-        speedY = -1
+        speedY = -1;
 
         setInterval(() => {
             xx = document.getElementById('x')
-            xx.style.top = parseInt(xx.style.top) - speedX + 'px';
-            xx.style.left = parseInt(xx.style.left) - speedY + 'px';
+            xx.style.top = parseInt(xx.style.top) + speedX + 'px';
+            xx.style.left = parseInt(xx.style.left) + speedY + 'px';
                 console.log(xx.style.left);
                 console.log(xx.style.top);
 
@@ -32,12 +32,7 @@
             if (parseInt(xx.style.left) >= window.innerWidth - 200 || parseInt(xx.style.left) <= 0) {
                 speedY = -speedY;
             }
-        }, 1);
-
-        document.write(window.innerWidth-200);
-        document.write(window.innerHeight-200);
-
-
+        }, 10);
     </script>
 </body>
 </html>
