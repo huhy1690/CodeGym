@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        OOP: Là lập trình hướng đối tượng
+        Khái niệm: OOP là một cách tổ chức dữ liệu giúp mô tả thông tin dễ dàng hơn
+        Cú pháp
+        Cách dùng
+     -->
+
+     <script>
+    
+        
+
+        // Tạo 2 đối tượng có tên A, B điểm 8, 10 có hạng là khá và giỏi
+
+
+        // Lớp để tạo ra đối tượng có tên phần tử giống nhau
+
+        class student {
+            constructor (name, age, score) {
+            this.name = name;
+            this.age = age;
+            this.score = score;
+            }
+
+            f1() {
+                alert(this.name + ', ' + this.age + ', ' + this.score);
+            }
+        }
+
+        let s1 = new student ("ABC", 20, 10);
+        let s2 = new student ("DEFG", 20, 8);
+
+        s1.f1();
+        s2.f1();
+     </script>
+</body>
+</html>

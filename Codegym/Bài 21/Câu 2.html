@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let abc = [-1, 23, 34, 4, 54, 60 ,2, 1, 10, 11];
+
+        function insertNumbertoArray() {
+            let a = +prompt('Mời nhập số nguyên muốn thêm vào mảng');
+            let vitri = +prompt('Mời nhập vị trí muốn trèn vào mảng');
+
+            if (vitri > abc.length || vitri < 0) {return(abc)}
+            else {
+                abc.splice(vitri, 0, a);
+                return(abc);
+            }
+        }
+
+        alert(insertNumbertoArray());
+    </script>
+</body>
+</html>

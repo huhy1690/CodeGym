@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let point = [5, 6, 8, 9, 8, 10, 3];
+
+        function findAvg() {
+            a = 0;
+            tb = 0;
+            for (i = 0; i < point.length; i++) {
+                a++;
+                tb = tb + point[i];
+            }
+            tb = tb / a;
+            return(tb);
+        }
+
+        alert(findAvg());
+    </script>
+</body>
+</html>

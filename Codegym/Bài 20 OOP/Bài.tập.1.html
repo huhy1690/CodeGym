@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lớp:
+        class infor {
+            constructor(id, name, price, quantity) {
+               this.id = id;
+               this.name = name;
+               this.price = price;
+               this.quantity = quantity;
+            }
+            getin4() {
+                alert(this.id + ', ' + this.name + ', ' + this.price + ', ' + this.quantity);
+            }
+        }
+
+        let s1 = new infor("ABC1", "IP10", 1000, 5);
+        s1.getin4();
+    </script>
+</body>
+</html>
